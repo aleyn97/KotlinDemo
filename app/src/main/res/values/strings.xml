@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">搜猴水务</string>
+    <string name="Login">登录</string>
+    <string name="Company_name">河南搜猴网络科技有限公司</string>
+
+    <string name="hint_please_input_content">请输入文本内容</string>
+    <string name="lbl_logout">退出登录</string>
+    <string name="cb_text">抄表</string>
+    <string name="bx_text">报修</string>
+    <string name="bz_text">报装</string>
+    <string name="exit_text">退出</string>
+    <string name="ServerError">服务器或网络出错</string>
+</resources>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:visibility="invisible"
+        android:id="@+id/Liner_Not_Det"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:background="@drawable/shape_lin_bag"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/hand_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="姓\u3000名："
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/handel_user_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_toRightOf="@id/hand_name"
+            android:gravity="center_vertical"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/hand_name"
+            android:layout_margin="5dp"
+            android:text="维修人："
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/fault_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/hand_name"
+            android:layout_margin="5dp"
+            android:layout_toRightOf="@id/hand_name"
+            android:gravity="center_vertical"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fault_name"
+            android:layout_margin="5dp"
+            android:text="故\u3000障："
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/fault_count"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fault_name"
+            android:layout_margin="5dp"
+            android:layout_toRightOf="@id/hand_name"
+            android:gravity="center_vertical"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fault_count"
+            android:layout_margin="5dp"
+            android:text="时\u3000间："
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/fault_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fault_count"
+            android:layout_margin="5dp"
+            android:layout_toRightOf="@id/hand_name"
+            android:gravity="center_vertical"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/now_pic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fault_time"
+            android:layout_gravity="left"
+            android:layout_marginTop="10dp"
+            android:text="现场图片："
+            android:textColor="@color/cw_blue_500"
+            android:textSize="13sp" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/detil_gridView"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_below="@id/now_pic"
+            android:layout_margin="5dp"
+            android:background="@color/White"
+            android:columnWidth="5dp"
+            android:gravity="center"
+            android:horizontalSpacing="5dp" />
+    </RelativeLayout>
+</RelativeLayout>

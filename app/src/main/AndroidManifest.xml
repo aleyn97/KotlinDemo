@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="sh.com.pcl">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".ui.activity.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/login_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:icon, android:theme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".common.BaseActivity" />
+        <activity android:name=".ui.activity.HomeActivity" />
+        <activity android:name=".ui.activity.MeterQRActivity" />
+        <activity android:name=".ui.activity.MeterAlbumActivity" />
+        <activity android:name=".ui.activity.FaultMsgActivity" />
+        <activity android:name=".ui.activity.MeterRecordActivity" />
+        <activity android:name=".ui.activity.UserDataActivity" />
+        <activity android:name=".ui.activity.QrActivity" />
+        <activity android:name=".ui.activity.MeterRecordListActivity" />
+        <activity android:name=".ui.activity.MeterSubActivity" />
+        <activity android:name=".ui.activity.FaultHandelActivity" />
+        <activity android:name=".ui.activity.FaultDataActivity" />
+        <activity android:name=".ui.activity.HandelDetailsActivity" />
+        <activity android:name=".ui.activity.FaultNewActivity" />
+        <activity android:name=".ui.activity.FaultSubActivity" />
+        <activity android:name=".ui.activity.NewMsgActivity" />
+        <activity android:name=".ui.activity.NewMsgDetilesActivity" />
+        <activity android:name=".ui.activity.NewHandleActivity" />
+        <activity android:name=".ui.activity.NewHandDetActivity" />
+        <activity android:name=".ui.activity.NewAddActivity" />
+        <activity android:name=".ui.activity.NewSubActivity"></activity>
+    </application>
+
+</manifest>

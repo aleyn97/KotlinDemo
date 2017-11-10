@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/item_cb"
+        android:icon="@mipmap/bottom_record"
+        android:title="@string/cb_text" />
+    <item
+        android:id="@+id/item_bx"
+        android:icon="@mipmap/bottom_fault"
+        android:title="@string/bx_text" />
+    <item
+        android:id="@+id/item_bz"
+        android:icon="@mipmap/bottom_news"
+        android:title="@string/bz_text" />
+    <item
+        android:id="@+id/item_exit"
+        android:icon="@mipmap/bottom_exit"
+        android:title="@string/exit_text" />
+</menu>

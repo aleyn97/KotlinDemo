@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="sh.com.pcl.ui.activity.QrActivity">
+
+    <me.dm7.barcodescanner.zxing.ZXingScannerView
+        android:id="@+id/zxing_qr"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:id="@+id/bt_lamp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="50dp"
+        android:background="@color/cw_hui"
+        android:padding="5dp"
+        android:text="开/关灯"
+        android:textColor="@color/White" />
+
+    <TextView
+        android:id="@+id/bt_hand"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="50dp"
+        android:background="@color/cw_hui"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="手动输入"
+        android:textColor="@color/White" />
+
+</RelativeLayout>

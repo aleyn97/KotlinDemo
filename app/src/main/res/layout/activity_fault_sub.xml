@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f2f2"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/lin_sub"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/fault_text_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="维  修 人 ："
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_toRightOf="@id/fault_text_name"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fault_text_name"
+            android:layout_margin="5dp"
+            android:text="维修说明："
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/ed_input_explain"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_below="@id/fault_text_name"
+            android:layout_margin="5dp"
+            android:layout_toRightOf="@id/fault_text_name"
+            android:background="@drawable/shape_list_one"
+            android:gravity="top"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/pic_now"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ed_input_explain"
+            android:layout_margin="5dp"
+            android:text="现场图片："
+            android:textSize="15sp" />
+
+        <GridView
+            android:id="@+id/pic_gridView"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:layout_below="@id/pic_now"
+            android:layout_margin="5dp"
+            android:background="@color/White"
+            android:columnWidth="90dp"
+            android:gravity="center"
+            android:horizontalSpacing="5dp"
+            android:numColumns="5"
+            android:padding="5dp"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="5dp" />
+
+        <Button
+            android:id="@+id/fault_sub"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pic_gridView"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:background="@drawable/shape_button_true"
+            android:text="提交" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/text_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center" />
+</LinearLayout>

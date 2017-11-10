@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cw_hui"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <sh.com.pcl.utils.ClearEditText
+            android:id="@+id/user_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="请输入手机号或用户编号" />
+
+        <ImageButton
+            android:id="@+id/bt_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="3"
+            android:src="@drawable/svg_search" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_user_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/shape_list_one"
+        android:padding="5dp"
+        android:visibility="invisible">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="姓名："
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_name2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/tv_name"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_name"
+            android:layout_marginTop="14dp"
+            android:text="编号："
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_number2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/tv_peopel"
+            android:layout_toRightOf="@id/tv_number"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_peopel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/tv_number"
+            android:layout_marginTop="16dp"
+            android:text="人口数量："
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_peopel2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tv_peopel"
+            android:layout_alignBottom="@+id/tv_peopel"
+            android:layout_marginLeft="11dp"
+            android:layout_marginStart="11dp"
+            android:layout_toEndOf="@+id/tv_peopel"
+            android:layout_toRightOf="@+id/tv_peopel"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/tv_peopel"
+            android:layout_marginTop="18dp"
+            android:text="家庭住址："
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_address2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tv_address"
+            android:layout_alignBottom="@+id/tv_address"
+            android:layout_alignLeft="@+id/tv_peopel2"
+            android:layout_alignStart="@+id/tv_peopel2"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/tv_address"
+            android:layout_marginTop="20dp"
+            android:text="开户时间："
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_time2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tv_time"
+            android:layout_alignBottom="@+id/tv_time"
+            android:layout_alignLeft="@+id/tv_address2"
+            android:layout_alignStart="@+id/tv_address2"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_water_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/tv_time"
+            android:layout_marginTop="21dp"
+            android:text="水表编号："
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_water_num2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tv_water_num"
+            android:layout_alignBottom="@+id/tv_water_num"
+            android:layout_alignLeft="@+id/tv_time2"
+            android:layout_alignStart="@+id/tv_time2"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_az_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/tv_water_num"
+            android:layout_marginTop="24dp"
+            android:text="安装时间："
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_az_time2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tv_az_time"
+            android:layout_alignBottom="@+id/tv_az_time"
+            android:layout_alignLeft="@+id/tv_water_num2"
+            android:layout_alignStart="@+id/tv_water_num2"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/tv_az_time"
+            android:layout_marginTop="15dp"
+            android:text="水表状态："
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_state2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tv_state"
+            android:layout_alignBottom="@+id/tv_state"
+            android:layout_alignLeft="@+id/tv_az_time2"
+            android:layout_alignStart="@+id/tv_az_time2"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_modle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/tv_state"
+            android:layout_marginTop="21dp"
+            android:text="水表型号："
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_modle2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tv_modle"
+            android:layout_alignBottom="@+id/tv_modle"
+            android:layout_alignLeft="@+id/tv_state2"
+            android:layout_alignStart="@+id/tv_state2"
+            android:textSize="20sp" />
+    </RelativeLayout>
+</LinearLayout>
